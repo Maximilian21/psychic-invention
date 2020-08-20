@@ -6,7 +6,7 @@
 void scalar_multiply(double scalar, std::vector<double> &d_vector){
     int i, vector_size=d_vector.size();
 
-    for(i=0, i<vector_size; i++){
+    for(i=0; i<vector_size; i++){
         d_vector[i] *= scalar;
     }
 }
@@ -17,7 +17,7 @@ double vector_dot_product(std::vector<double> first_vector,
     int fvector_size = first_vector.size();
     double result = 0;
     if(fvector_size != second_vector.size()){
-        std::cout << "Incompatiable sizes, returning 0..." << std::endl;
+        std::cout << "Incompatable sizes, returning 0..." << std::endl;
 	return result;
     }
 
